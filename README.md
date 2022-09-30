@@ -1,10 +1,10 @@
 # RPLidarCV Library for Teensy
 
-The RPLidarCV library was created for the Caveatron to interface with the RPLidar modules. It is a significantly pared down version of the RPLidar SDK that provides the minimal functions needed to obtain data from several LIDAR modules at their supported data rates and support a few basic commands. The functions have been lightly modified for simplification and consistency.
+The RPLidarCV library was created for the Caveatron to interface with the RPLidar modules. It is a significantly pared down version of the [RPLidar Public SDK for C++](https://github.com/Slamtec/rplidar_sdk) that provides the minimal functions needed to obtain data from several LIDAR modules at their supported data rates and support a few basic commands. The functions have been lightly modified for simplification and consistency.
 
 ## Supported RPLIDARs
 
-The library has only been validated with the A1M8 and S2, however it is likely that it function with any of the following:
+The library has only been validated with the A1M8 and S2, however it is likely that it functions with any of the following:
 
 A1M8, A2M6, A2M7, A2M8, A3, S2
 
