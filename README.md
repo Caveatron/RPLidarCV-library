@@ -12,6 +12,12 @@ A1M8, A2M6, A2M7, A2M8, A3, S2
 
 The full library has only been used with the Teensy 4. However, an earlier version of the library was used with the RPLIDAR A1M8 on the Teensy 3.6. It likely also works on similar platforms, however processing the high speed RPLIDAR data requires significant memory and processing capability.
 
+## Prerequisites
+
+This library has no external dependencies, however it is strongly recommended that you increase the size of the serial port RX buffer for the port to which the RPLIDAR is connected when using higher data rates. The S2 examples assume a serial port buffer size of 1024. 
+
+To change the Teensy 4 serial RX buffer size, go to your Arduino program folder, then go to hardware/teensy/avr/cores/teensy4/HardwareSerialx.cpp (where x is the serial port to adjust). Change the line #define SERIALx_RX_BUFFER_SIZE from 64 to 1024.
+
 ## Usage
 
 Two examples are provided for the S2 - for the 16K and 32K data rates. Examples for the A1M8 will be provided at a later point in time.
